@@ -7,6 +7,8 @@
 //
 
 #import "TImageCacheService.h"
+#import <TMarco/TMarco.h>
+#import <FHCategory/FHCategory.h>
 
 @implementation TImageCacheService
 
@@ -26,7 +28,7 @@
 }
 
 - (NSString*)cacheKeyWithString:(NSString *)str extraKey:(NSString *)extraKey {
-    return [[[str stringByAppendingString:extraKey?extraKey:@""] lh_md5String] stringByAppendingString:@".png"];
+    return [[[str stringByAppendingString:extraKey?extraKey:@""] fh_md5String] stringByAppendingString:@".png"];
 }
 
 - (NSString*)cachePathWithKey:(NSString*)key {

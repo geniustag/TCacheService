@@ -1,3 +1,4 @@
 target ‘TCacheServiceDemo’ do
-	pod ‘TMarco’
+	pod 'TMarco'
+    pod 'FHCategory'
 end

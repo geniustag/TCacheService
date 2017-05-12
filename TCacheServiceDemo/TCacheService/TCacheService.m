@@ -7,6 +7,7 @@
 //
 
 #import "TCacheService.h"
+#import <TMarco/TMarco.h>
 
 #define Default_Assert @"此方法必须被子类重写"
 

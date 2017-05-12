@@ -7,6 +7,8 @@
 //
 
 #import "TNetworkCacheService.h"
+#import <TMarco/TMarco.h>
+#import <FHCategory/FHCategory.h>
 
 @implementation TNetworkCacheService
 
@@ -21,7 +23,7 @@
 }
 
 - (NSString*)cacheKeyWithString:(NSString *)str extraKey:(NSString *)extraKey {
-    return [[str stringByAppendingString:extraKey?extraKey:@""] lh_md5String];
+    return [[str stringByAppendingString:extraKey?extraKey:@""] fh_md5String];
 }
 
 - (NSString*)cachePathWithKey:(NSString *)key {
