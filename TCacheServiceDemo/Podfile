@@ -1,0 +1,3 @@
+target ‘TCacheServiceDemo’ do
+	pod ‘TMarco’
+end

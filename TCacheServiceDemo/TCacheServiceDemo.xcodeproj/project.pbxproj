@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FF588D42E3183606AA1E8DD /* libPods-TCacheServiceDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7E88510B09F42B41F2E47A /* libPods-TCacheServiceDemo.a */; };
+		880D85891EC552EC00922EC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85881EC552EC00922EC2 /* main.m */; };
+		880D858C1EC552EC00922EC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D858B1EC552EC00922EC2 /* AppDelegate.m */; };
+		880D858F1EC552EC00922EC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D858E1EC552EC00922EC2 /* ViewController.m */; };
+		880D85921EC552EC00922EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D85901EC552EC00922EC2 /* Main.storyboard */; };
+		880D85941EC552EC00922EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880D85931EC552EC00922EC2 /* Assets.xcassets */; };
+		880D85971EC552EC00922EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880D85951EC552EC00922EC2 /* LaunchScreen.storyboard */; };
+		880D85A21EC552EC00922EC2 /* TCacheServiceDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85A11EC552EC00922EC2 /* TCacheServiceDemoTests.m */; };
+		880D85AD1EC552EC00922EC2 /* TCacheServiceDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85AC1EC552EC00922EC2 /* TCacheServiceDemoUITests.m */; };
+		880D85C11EC553D100922EC2 /* TCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85BC1EC553D100922EC2 /* TCacheService.m */; };
+		880D85C21EC553D100922EC2 /* TImageCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85BE1EC553D100922EC2 /* TImageCacheService.m */; };
+		880D85C31EC553D100922EC2 /* TNetworkCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 880D85C01EC553D100922EC2 /* TNetworkCacheService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		880D859E1EC552EC00922EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880D857C1EC552EC00922EC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880D85831EC552EC00922EC2;
+			remoteInfo = TCacheServiceDemo;
+		};
+		880D85A91EC552EC00922EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880D857C1EC552EC00922EC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880D85831EC552EC00922EC2;
+			remoteInfo = TCacheServiceDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67AD0AEB733539332C97AC6D /* Pods-TCacheServiceDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCacheServiceDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCacheServiceDemo/Pods-TCacheServiceDemo.release.xcconfig"; sourceTree = "<group>"; };
+		880D85841EC552EC00922EC2 /* TCacheServiceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCacheServiceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D85881EC552EC00922EC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		880D858A1EC552EC00922EC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		880D858B1EC552EC00922EC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		880D858D1EC552EC00922EC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		880D858E1EC552EC00922EC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		880D85911EC552EC00922EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		880D85931EC552EC00922EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		880D85961EC552EC00922EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		880D85981EC552EC00922EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880D859D1EC552EC00922EC2 /* TCacheServiceDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCacheServiceDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D85A11EC552EC00922EC2 /* TCacheServiceDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCacheServiceDemoTests.m; sourceTree = "<group>"; };
+		880D85A31EC552EC00922EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880D85A81EC552EC00922EC2 /* TCacheServiceDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCacheServiceDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880D85AC1EC552EC00922EC2 /* TCacheServiceDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCacheServiceDemoUITests.m; sourceTree = "<group>"; };
+		880D85AE1EC552EC00922EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880D85BB1EC553D100922EC2 /* TCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCacheService.h; sourceTree = "<group>"; };
+		880D85BC1EC553D100922EC2 /* TCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCacheService.m; sourceTree = "<group>"; };
+		880D85BD1EC553D100922EC2 /* TImageCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TImageCacheService.h; sourceTree = "<group>"; };
+		880D85BE1EC553D100922EC2 /* TImageCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TImageCacheService.m; sourceTree = "<group>"; };
+		880D85BF1EC553D100922EC2 /* TNetworkCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNetworkCacheService.h; sourceTree = "<group>"; };
+		880D85C01EC553D100922EC2 /* TNetworkCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNetworkCacheService.m; sourceTree = "<group>"; };
+		BB7E88510B09F42B41F2E47A /* libPods-TCacheServiceDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCacheServiceDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5171C6349AF4B1036FDC950 /* Pods-TCacheServiceDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCacheServiceDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCacheServiceDemo/Pods-TCacheServiceDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		880D85811EC552EC00922EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF588D42E3183606AA1E8DD /* libPods-TCacheServiceDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D859A1EC552EC00922EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D85A51EC552EC00922EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		880D857B1EC552EC00922EC2 = {
+			isa = PBXGroup;
+			children = (
+				880D85BA1EC5532600922EC2 /* TCacheService */,
+				880D85861EC552EC00922EC2 /* TCacheServiceDemo */,
+				880D85A01EC552EC00922EC2 /* TCacheServiceDemoTests */,
+				880D85AB1EC552EC00922EC2 /* TCacheServiceDemoUITests */,
+				880D85851EC552EC00922EC2 /* Products */,
+				E8280A37F5E6F73916416912 /* Pods */,
+				F9D93FCABD62B0E32BC5FED8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		880D85851EC552EC00922EC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				880D85841EC552EC00922EC2 /* TCacheServiceDemo.app */,
+				880D859D1EC552EC00922EC2 /* TCacheServiceDemoTests.xctest */,
+				880D85A81EC552EC00922EC2 /* TCacheServiceDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		880D85861EC552EC00922EC2 /* TCacheServiceDemo */ = {
+			isa = PBXGroup;
+			children = (
+				880D858A1EC552EC00922EC2 /* AppDelegate.h */,
+				880D858B1EC552EC00922EC2 /* AppDelegate.m */,
+				880D858D1EC552EC00922EC2 /* ViewController.h */,
+				880D858E1EC552EC00922EC2 /* ViewController.m */,
+				880D85901EC552EC00922EC2 /* Main.storyboard */,
+				880D85931EC552EC00922EC2 /* Assets.xcassets */,
+				880D85951EC552EC00922EC2 /* LaunchScreen.storyboard */,
+				880D85981EC552EC00922EC2 /* Info.plist */,
+				880D85871EC552EC00922EC2 /* Supporting Files */,
+			);
+			path = TCacheServiceDemo;
+			sourceTree = "<group>";
+		};
+		880D85871EC552EC00922EC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				880D85881EC552EC00922EC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		880D85A01EC552EC00922EC2 /* TCacheServiceDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				880D85A11EC552EC00922EC2 /* TCacheServiceDemoTests.m */,
+				880D85A31EC552EC00922EC2 /* Info.plist */,
+			);
+			path = TCacheServiceDemoTests;
+			sourceTree = "<group>";
+		};
+		880D85AB1EC552EC00922EC2 /* TCacheServiceDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				880D85AC1EC552EC00922EC2 /* TCacheServiceDemoUITests.m */,
+				880D85AE1EC552EC00922EC2 /* Info.plist */,
+			);
+			path = TCacheServiceDemoUITests;
+			sourceTree = "<group>";
+		};
+		880D85BA1EC5532600922EC2 /* TCacheService */ = {
+			isa = PBXGroup;
+			children = (
+				880D85BB1EC553D100922EC2 /* TCacheService.h */,
+				880D85BC1EC553D100922EC2 /* TCacheService.m */,
+				880D85BD1EC553D100922EC2 /* TImageCacheService.h */,
+				880D85BE1EC553D100922EC2 /* TImageCacheService.m */,
+				880D85BF1EC553D100922EC2 /* TNetworkCacheService.h */,
+				880D85C01EC553D100922EC2 /* TNetworkCacheService.m */,
+			);
+			path = TCacheService;
+			sourceTree = "<group>";
+		};
+		E8280A37F5E6F73916416912 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5171C6349AF4B1036FDC950 /* Pods-TCacheServiceDemo.debug.xcconfig */,
+				67AD0AEB733539332C97AC6D /* Pods-TCacheServiceDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9D93FCABD62B0E32BC5FED8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7E88510B09F42B41F2E47A /* libPods-TCacheServiceDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		880D85831EC552EC00922EC2 /* TCacheServiceDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D85B11EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemo" */;
+			buildPhases = (
+				81A867F1C62B9F8B03E77989 /* [CP] Check Pods Manifest.lock */,
+				880D85801EC552EC00922EC2 /* Sources */,
+				880D85811EC552EC00922EC2 /* Frameworks */,
+				880D85821EC552EC00922EC2 /* Resources */,
+				C8F46FD9C387A11E0C2C17F9 /* [CP] Embed Pods Frameworks */,
+				0711CE27DF2B2FC9EA7EEB1A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCacheServiceDemo;
+			productName = TCacheServiceDemo;
+			productReference = 880D85841EC552EC00922EC2 /* TCacheServiceDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		880D859C1EC552EC00922EC2 /* TCacheServiceDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D85B41EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemoTests" */;
+			buildPhases = (
+				880D85991EC552EC00922EC2 /* Sources */,
+				880D859A1EC552EC00922EC2 /* Frameworks */,
+				880D859B1EC552EC00922EC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880D859F1EC552EC00922EC2 /* PBXTargetDependency */,
+			);
+			name = TCacheServiceDemoTests;
+			productName = TCacheServiceDemoTests;
+			productReference = 880D859D1EC552EC00922EC2 /* TCacheServiceDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		880D85A71EC552EC00922EC2 /* TCacheServiceDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880D85B71EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemoUITests" */;
+			buildPhases = (
+				880D85A41EC552EC00922EC2 /* Sources */,
+				880D85A51EC552EC00922EC2 /* Frameworks */,
+				880D85A61EC552EC00922EC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880D85AA1EC552EC00922EC2 /* PBXTargetDependency */,
+			);
+			name = TCacheServiceDemoUITests;
+			productName = TCacheServiceDemoUITests;
+			productReference = 880D85A81EC552EC00922EC2 /* TCacheServiceDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		880D857C1EC552EC00922EC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = com.tagq.geniustag;
+				TargetAttributes = {
+					880D85831EC552EC00922EC2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					880D859C1EC552EC00922EC2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 880D85831EC552EC00922EC2;
+					};
+					880D85A71EC552EC00922EC2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 880D85831EC552EC00922EC2;
+					};
+				};
+			};
+			buildConfigurationList = 880D857F1EC552EC00922EC2 /* Build configuration list for PBXProject "TCacheServiceDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 880D857B1EC552EC00922EC2;
+			productRefGroup = 880D85851EC552EC00922EC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				880D85831EC552EC00922EC2 /* TCacheServiceDemo */,
+				880D859C1EC552EC00922EC2 /* TCacheServiceDemoTests */,
+				880D85A71EC552EC00922EC2 /* TCacheServiceDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		880D85821EC552EC00922EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D85971EC552EC00922EC2 /* LaunchScreen.storyboard in Resources */,
+				880D85941EC552EC00922EC2 /* Assets.xcassets in Resources */,
+				880D85921EC552EC00922EC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D859B1EC552EC00922EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D85A61EC552EC00922EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0711CE27DF2B2FC9EA7EEB1A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCacheServiceDemo/Pods-TCacheServiceDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81A867F1C62B9F8B03E77989 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F46FD9C387A11E0C2C17F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TCacheServiceDemo/Pods-TCacheServiceDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		880D85801EC552EC00922EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D85C31EC553D100922EC2 /* TNetworkCacheService.m in Sources */,
+				880D858F1EC552EC00922EC2 /* ViewController.m in Sources */,
+				880D85C21EC553D100922EC2 /* TImageCacheService.m in Sources */,
+				880D858C1EC552EC00922EC2 /* AppDelegate.m in Sources */,
+				880D85891EC552EC00922EC2 /* main.m in Sources */,
+				880D85C11EC553D100922EC2 /* TCacheService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D85991EC552EC00922EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D85A21EC552EC00922EC2 /* TCacheServiceDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880D85A41EC552EC00922EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880D85AD1EC552EC00922EC2 /* TCacheServiceDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		880D859F1EC552EC00922EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880D85831EC552EC00922EC2 /* TCacheServiceDemo */;
+			targetProxy = 880D859E1EC552EC00922EC2 /* PBXContainerItemProxy */;
+		};
+		880D85AA1EC552EC00922EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880D85831EC552EC00922EC2 /* TCacheServiceDemo */;
+			targetProxy = 880D85A91EC552EC00922EC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		880D85901EC552EC00922EC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880D85911EC552EC00922EC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		880D85951EC552EC00922EC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880D85961EC552EC00922EC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		880D85AF1EC552EC00922EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		880D85B01EC552EC00922EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		880D85B21EC552EC00922EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5171C6349AF4B1036FDC950 /* Pods-TCacheServiceDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TCacheServiceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		880D85B31EC552EC00922EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67AD0AEB733539332C97AC6D /* Pods-TCacheServiceDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TCacheServiceDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		880D85B51EC552EC00922EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCacheServiceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCacheServiceDemo.app/TCacheServiceDemo";
+			};
+			name = Debug;
+		};
+		880D85B61EC552EC00922EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCacheServiceDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCacheServiceDemo.app/TCacheServiceDemo";
+			};
+			name = Release;
+		};
+		880D85B81EC552EC00922EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCacheServiceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCacheServiceDemo;
+			};
+			name = Debug;
+		};
+		880D85B91EC552EC00922EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCacheServiceDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = FromHell.TCacheServiceDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCacheServiceDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		880D857F1EC552EC00922EC2 /* Build configuration list for PBXProject "TCacheServiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D85AF1EC552EC00922EC2 /* Debug */,
+				880D85B01EC552EC00922EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880D85B11EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D85B21EC552EC00922EC2 /* Debug */,
+				880D85B31EC552EC00922EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		880D85B41EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D85B51EC552EC00922EC2 /* Debug */,
+				880D85B61EC552EC00922EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		880D85B71EC552EC00922EC2 /* Build configuration list for PBXNativeTarget "TCacheServiceDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880D85B81EC552EC00922EC2 /* Debug */,
+				880D85B91EC552EC00922EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 880D857C1EC552EC00922EC2 /* Project object */;
+}
