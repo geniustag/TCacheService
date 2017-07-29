@@ -17,7 +17,7 @@
 }
 
 + (instancetype)cacheServiceWithPath:(NSString *)cachePath runQueue:(dispatch_queue_t)queue {
-    NSString* cache_path = cachePath ? [cachePath copy] : [kPathCache stringByAppendingPathComponent:@"imageCacheService"];
+    NSString* cache_path = cachePath ? [cachePath copy] : [kPathCache stringByAppendingPathComponent:@"default"];
     dispatch_queue_t run_queue = queue ? queue : dispatch_queue_create("com.image.cacheService", DISPATCH_QUEUE_SERIAL);
     TImageCacheService* cacheService = [[TImageCacheService alloc] initWithCachePath:cache_path runQueue:run_queue];
     return cacheService;
