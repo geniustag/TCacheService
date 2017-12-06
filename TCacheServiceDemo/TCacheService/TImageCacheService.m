@@ -44,7 +44,7 @@
 }
 
 - (NSString *)cacheRelativePathWithKey:(NSString *)key extraKey:(NSString *)extraKey {
-    return [@"default" stringByAppendingString:[self cacheKeyWithString:key extraKey:extraKey]];
+    return [@"default" stringByAppendingPathComponent:[self cacheKeyWithString:key extraKey:extraKey]];
 }
 
 - (void)cacheData:(id)data key:(NSString *)key {
