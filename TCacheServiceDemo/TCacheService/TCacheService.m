@@ -53,6 +53,16 @@
     return nil;
 }
 
+- (NSString *)cacheRelativePathWithKey:(NSString *)key {
+    NSAssert(NO, Default_Assert);
+    return nil;
+}
+
+- (NSString *)cacheRelativePathWithKey:(NSString *)key extraKey:(NSString *)extraKey {
+    NSAssert(NO, Default_Assert);
+    return nil;
+}
+
 - (void)cacheData:(id)data key:(NSString*)key {
     NSAssert(NO, Default_Assert);
 }

@@ -17,7 +17,7 @@
 }
 
 + (instancetype)cacheServiceWithPath:(NSString *)cachePath runQueue:(dispatch_queue_t)queue {
-    NSString* cache_path = cachePath ? [cachePath copy] : [kPathCache stringByAppendingPathComponent:@"imageCacheService"];
+    NSString* cache_path = cachePath ? [cachePath copy] : [kPathCache stringByAppendingPathComponent:@"default"];
     dispatch_queue_t run_queue = queue ? queue : dispatch_queue_create("com.image.cacheService", DISPATCH_QUEUE_SERIAL);
     TImageCacheService* cacheService = [[TImageCacheService alloc] initWithCachePath:cache_path runQueue:run_queue];
     return cacheService;
@@ -37,6 +37,14 @@
 
 - (NSString*)cachePathWithKey:(NSString *)key extraKey:(NSString *)extraKey {
     return [self.cachePath stringByAppendingPathComponent:[self cacheKeyWithString:key extraKey:extraKey]];
+}
+
+- (NSString *)cacheRelativePathWithKey:(NSString *)key {
+    return [self cacheRelativePathWithKey:key extraKey:nil];
+}
+
+- (NSString *)cacheRelativePathWithKey:(NSString *)key extraKey:(NSString *)extraKey {
+    return [@"default" stringByAppendingString:[self cacheKeyWithString:key extraKey:extraKey]];
 }
 
 - (void)cacheData:(id)data key:(NSString *)key {

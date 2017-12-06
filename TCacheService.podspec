@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "TCacheService"
-    s.version      = "0.0.2"
+    s.version      = "0.0.3"
     s.summary      = "cacheService."
     s.homepage     = "https://github.com/geniustag/TCacheService.git"
     s.license      = "MIT"

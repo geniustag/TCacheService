@@ -7,6 +7,7 @@
 //
 
 #import "TCacheService.h"
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface TImageCacheService : TCacheService
 

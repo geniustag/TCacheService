@@ -28,6 +28,11 @@
 
 - (NSString*)cachePathWithKey:(NSString *)key extraKey:(NSString*)extraKey;
 
+- (NSString *)cacheRelativePathWithKey:(NSString *)key;
+
+- (NSString *)cacheRelativePathWithKey:(NSString *)key
+                              extraKey:(NSString *)extraKey;
+
 - (void)cacheData:(id)data key:(NSString*)key;
 
 - (void)cacheData:(id)data key:(NSString *)key extraKey:(NSString*)extraKey;
