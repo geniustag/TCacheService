@@ -1,4 +1,5 @@
 target ‘TCacheServiceDemo’ do
 	pod 'TMarco'
     pod 'FHCategory'
+#    pod 'SDWebImage'
 end

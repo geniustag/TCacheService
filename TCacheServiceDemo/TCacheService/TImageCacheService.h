@@ -20,7 +20,7 @@
  */
 - (void)cacheData:(id)data
               key:(NSString *)key
-          quality:(CGFloat)quality;
+          quality:(float)quality;
 
 /**
  缓存图片
@@ -33,7 +33,7 @@
 - (void)cacheData:(id)data
               key:(NSString *)key
          extrakey:(NSString*)extraKey
-          quality:(CGFloat)quality;
+          quality:(float)quality;
 
 /**
  异步缓存
@@ -45,13 +45,13 @@
  */
 - (void)cacheData:(id)data
               key:(NSString *)key
-          quality:(CGFloat)quality
+          quality:(float)quality
          complete:(dispatch_block_t)complete;
 
 - (void)cacheData:(id)data
               key:(NSString *)key
          extraKey:(NSString*)extraKey
-          quality:(CGFloat)quality
+          quality:(float)quality
          complete:(dispatch_block_t)complete;
 
 @end

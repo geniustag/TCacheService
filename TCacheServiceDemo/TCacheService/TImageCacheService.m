@@ -55,14 +55,14 @@
     [self cacheData:data key:key extrakey:extraKey quality:1.0];
 }
 
-- (void)cacheData:(id)data key:(NSString *)key quality:(CGFloat)quality {
+- (void)cacheData:(id)data key:(NSString *)key quality:(float)quality {
     [self cacheData:data key:key extrakey:nil quality:quality];
 }
 
 - (void)cacheData:(id)data
               key:(NSString *)key
          extrakey:(NSString *)extraKey
-          quality:(CGFloat)quality {
+          quality:(float)quality {
     NSParameterAssert(data);
     NSParameterAssert(key);
     if ([data isKindOfClass:@classify(UIImage)]) {
@@ -85,7 +85,7 @@
 
 - (void)cacheData:(id)data
               key:(NSString *)key
-          quality:(CGFloat)quality
+          quality:(float)quality
          complete:(dispatch_block_t)complete {
     [self cacheData:data key:key extraKey:nil quality:quality complete:complete];
 }
@@ -93,7 +93,7 @@
 - (void)cacheData:(id)data
               key:(NSString *)key
          extraKey:(NSString *)extraKey
-          quality:(CGFloat)quality
+          quality:(float)quality
          complete:(dispatch_block_t)complete {
     dispatch_async(self.opeartionQueue, ^{
         [self cacheData:data key:key extrakey:extraKey quality:quality];
